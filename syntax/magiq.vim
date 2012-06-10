@@ -21,14 +21,14 @@ endif
 syn case match
 
 " Reserved Words
-syn keyword magiqReserved contained AC ACC ACCEPT AND CALL CO COMPLEX COMPUTE DET
-syn keyword magiqReserved contained DI DIS DISPLAY DY ELSE END-IF FILE GO LE LEF
-syn keyword magiqReserved contained LEFTJ LJ MO MOVE MV NEXT OC OCC OCCURS OR
-syn keyword magiqReserved contained PATTERN PIC PE PER PERFORM PQ PR PRI PRINT
-syn keyword magiqReserved contained PROCEDURAL R RG READ REWRITE ROW ROWA ROWB
-syn keyword magiqReserved contained SEARCH SECTION SET SI SIMPLE SIZE START ST STR
-syn keyword magiqReserved contained STRING SU SUB SUBSET SYSTEM TO TOT VA VAL VALUE
-syn keyword magiqReserved contained VARIABLES WRITE
+syn keyword magiqReserved contained AC ACC ACCEPT AND CALL CO COMPLEX COMPUTE
+syn keyword magiqReserved contained DET DI DIS DISPLAY DY ELSE END-IF FILE GO LE
+syn keyword magiqReserved contained LEF LEFTJ LJ MO MOVE MV NEXT OC OCC OCCURS
+syn keyword magiqReserved contained OR PATTERN PIC PE PER PERFORM PQ PR PRI
+syn keyword magiqReserved contained PRINT PROCEDURAL R RG READ REWRITE ROW ROWA
+syn keyword magiqReserved contained ROWB SEARCH SECTION SET SI SIMPLE SIZE START
+syn keyword magiqReserved contained ST STR STRING SU SUB SUBSET SYSTEM TO TOT VA
+syn keyword magiqReserved contained VAL VALUE VARIABLES WRITE
 syn match   magiqReserved contained "\<\(IF\|END\)\>"
 
 " Command Variables
@@ -37,31 +37,36 @@ syn match   magiqCommand  "\<W[89]\>"
 syn match   magiqCommand  "\<\$[^ ]*\>" " UNIX environment variable
 
 " Special Variables
-syn keyword magiqSpecial  S132ON S80ON SACBL SACINFO SACNV SACSKIP SACTRAN SACT[A]
-syn keyword magiqSpecial  SADD SALP[2] SAMP SAT SBOX SBRACKET SCALLID SCARAT
-syn keyword magiqSpecial  SCOBLVL SCOLS SCOLFL SCOLON SCONAME SCONDR1 SCONDR2
-syn keyword magiqSpecial  SCONDRF SCONDRG SCREEN SCRDY SCRPR SCPRE SCRSZ SCSVDEL
-syn keyword magiqSpecial  SCSVQUOTE SCURNO[2] SCURNON SCURSCR SDEBUG SDAY SDATE[F]
-syn keyword magiqSpecial  SDEL SDYFL SECT SECTSUB SEMICOL SENDKEY SERAL SERASE[2]
-syn keyword magiqSpecial  SEQF SEQAC SEQNEXT SEQST SF1[A] SF1B SFDESC SFID SFILEOP
-syn keyword magiqSpecial  SFLEXYW SFNAME SFNO SFORMAT SFORMFEED SHD32 SHDFL SID
-syn keyword magiqSpecial  SIGN SIZE SJOIN[F] SJULN[A] SKEY SKEYAUTO SKEYBD SKFLAG
-syn keyword magiqSpecial  SKIPZ SKKGID SKPREF SLAB SLADV SLASTAC SLASTGP SLASTNO
-syn keyword magiqSpecial  SLINE SLINK SLINS SLIST[S] SLISTRC SLMODE SLVL SMAINT
-syn keyword magiqSpecial  SMASK SMASKWA SMENUMSG SNBSP SNCVAR SNEWIF SNEWPG SNEXTAC
-syn keyword magiqSpecial  SNEXTGP SNEXTNO SNEXTN2 SNOTEKY SNXTROW SNULL SNUM[S]
-syn keyword magiqSpecial  SOCC SOKCNT SORD SORDKEY SORDREV SORTFL SOP SPACE SPGE
-syn keyword magiqSpecial  SPGNO SPGSZ SPOS SPR SPRDEV SPROMP2 SPROMPT SQUOTE SREV
-syn keyword magiqSpecial  SRFAUD SRG[S] SRGKEY SRGOPT SRDCNT SROUND SROW SRSPC
-syn keyword magiqSpecial  SRUNDT SRUNTM S[M] STABLE[B] STALLY STEPS STITLE[1]
-syn keyword magiqSpecial  STITLE3 STOTD STOTID STOTDIV STRACE SUBA SUBADV1 SUBADV2
-syn keyword magiqSpecial  SUBCHAR SUBFL SUBST SUBUL SUL SULCH SULINE[2] SUSERID
-syn keyword magiqSpecial  SUSERNAM SUSERNO SW[2] SWHERE SWIND SWINCNT SWORKD1
-syn keyword magiqSpecial  SWORKD2 SWORKDY SWORKTB
+syn keyword magiqSpecial  S S132ON S80ON SACBL SACINFO SACNV SACSKIP SACT SACTA
+syn keyword magiqSpecial  SACTRAN SADD SALP SALP2 SALPO SAMP SAT SBOX SBRACKET
+syn keyword magiqSpecial  SBREAK SCALLID SCARAT SCOBLVL SCOLE SCOLFL SCOLS
+syn keyword magiqSpecial  SCOMMA SCONAME SCONDE SCONDR1 SCONDR2 SCONDRF SCONDRG
+syn keyword magiqSpecial  SCONDS SCRDY SCREEN SCRLN SCRNV SCRPR SCRPRE SCRSZ
+syn keyword magiqSpecial  SCSVDEL SCSVQUOTE SCURNO SCURNO2 SCURNOF SCURNON
+syn keyword magiqSpecial  SCURSCR SDATE SDATEF SDAY SDEBUG SDEL SDYFL SECT
+syn keyword magiqSpecial  SECTSUB SELECT SEMICOL SENDKEY SEQAC SEQF SEQNEXT
+syn keyword magiqSpecial  SEQST SERAL SERASE SERASE2 SF1 SF1A SF1B SFDESC SFID
+syn keyword magiqSpecial  SFILEOP SFLEXYW SFNAME SFNO SFORMAT SFORMFEED SHDA
+syn keyword magiqSpecial  SHDAA SHDAB SHDB SHDBA SHDBB SHDFL SIGN SJOIN SJOINF
+syn keyword magiqSpecial  SJULN SJULNA SKEY SKEYAUTO SKEYBD SKFLAG SKIPZ SKKGID
+syn keyword magiqSpecial  SKPREF SLAB SLADV SLASTNO SLINE SLINK SLINS SLIST
+syn keyword magiqSpecial  SLISTRC SLISTS SLMODE SLVL SM SMAINT SMASK SMASKWA
+syn keyword magiqSpecial  SMENUMSG SNBSP SNCVAR SNEWIF SNEWPG SNEXTN2 SNEXTNO
+syn keyword magiqSpecial  SNOTEKY SNULL SNUM SNUMS SNXTROW SNXTRWN SOCC SOKCNT
+syn keyword magiqSpecial  SOP SORD SORDKEY SORDREV SORTFL SPACE SPGE SPGNO SPGSZ
+syn keyword magiqSpecial  SPIF SPOFF SPOS SPR SPRDEV SPROMP2 SPROMPT SQUOTE
+syn keyword magiqSpecial  SRDCNT SREV SRFAUD SRG SRGKEY SRGOPT SRGS SROUND SROW
+syn keyword magiqSpecial  SROWN SRSPC SRUNDT SRUNTM STABLE STABLEB STABNUB
+syn keyword magiqSpecial  STABNUM STALLY STEPS STITLE STITLE1 STITLE3 STOTD
+syn keyword magiqSpecial  STOTDIV STRACE SUBA SUBADV1 SUBADV2 SUBCHAR SUBFL
+syn keyword magiqSpecial  SUBST SUBUL SUL SULCH SULINE SULINE2 SUSERID SUSERIW
+syn keyword magiqSpecial  SUSERNAM SUSERNO SW SW2 SWHERE SWI SWINCNT SWIND
+syn keyword magiqSpecial  SWORKD1 SWORKD2 SWORKDY SWORKTB
 syn match   magiqSpecial  "\<S[1-9]\>"
 syn match   magiqSpecial  "\<SCOL\d\{1,3}\>"
-syn match   magiqSpecial  "\<SHD[1-9]\>"
+syn match   magiqSpecial  "\<SHD[1-4][12]\>"
 syn match   magiqSpecial  "\<SHD[AB]\{1,2}\>"
+syn match   magiqSpecial  "\<SID[1-9]\>"
 syn match   magiqSpecial  "\<SRG\d\{1,2}\>"
 
 syn keyword magiqGoTo     GO
