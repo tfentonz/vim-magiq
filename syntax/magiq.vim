@@ -64,6 +64,7 @@ syn keyword magiqSpecial  SUSERNAM SUSERNO SW SW2 SWHERE SWI SWINCNT SWIND
 syn keyword magiqSpecial  SWORKD1 SWORKD2 SWORKDY SWORKTB
 syn match   magiqSpecial  "\<S[1-9]\>"
 syn match   magiqSpecial  "\<SCOL\d\{1,3}\>"
+syn match   magiqSpecial  "\<SHD[1-9]\>"
 syn match   magiqSpecial  "\<SHD[1-4][12]\>"
 syn match   magiqSpecial  "\<SHD[AB]\{1,2}\>"
 syn match   magiqSpecial  "\<SID[1-9]\>"
