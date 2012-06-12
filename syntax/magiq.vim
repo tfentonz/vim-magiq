@@ -1,7 +1,7 @@
 " Vim syntax file
-" Language:    Magiq
+" Language:    MagiQ
 " Maintainer:  Tom Fenton <tom@ncs.co.nz>
-" Last change: 10 Jul 2012
+" Last change: 12 Jul 2012
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -73,15 +73,15 @@ syn match   magiqSpecial  "\<SRG\d\{1,2}\>"
 syn keyword magiqGoTo     GO
 syn keyword magiqCopy     COPY
 
-syn match   magiqTodo     "[Tt][Oo][Dd][Oo]" contained
+syn keyword magiqTodo     FIXME NOTE TODO XXX contained
 syn match   magiqSpecComment "DYOFF" contained
 " syn region  magiqComment  start=" *\*" end="$" contains=magiqTodo,magiqSpecComment,magiqCommentTitle
 syn match   magiqComment  +*.*$+ contains=magiqCommentTitle,magiqSpecComment,magiqTodo
 syn match   magiqCommentTitle '\s*\(\u\a*\s*\a*\s*\)\+:'ms=s+1 contained
 
 syn keyword magiqCALLs    CALL PE PER PERFORM PQ
-"syn keyword magiqCondition IF AND OR ELSE EN ENDIF
-"syn match   magiqCondition "\<END[- ]IF\>"
+" syn keyword magiqCondition IF AND OR ELSE EN ENDIF
+" syn match   magiqCondition "\<END[- ]IF\>"
 " syn keyword magiqExit     EXIT
 " syn match   magiqExit     "\.$"
 syn match   magiqLabel    "^ *[-/[:alnum:]]\+\] *$"
