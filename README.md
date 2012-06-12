@@ -1,7 +1,7 @@
 vim-magiq
 =========
 
-This vim bundle adds syntax highlighting, for NCS [MagiQ].
+This vim bundle adds syntax highlighting, for NCS MagiQ.
 
 ## Installing and Using ##
 
@@ -22,4 +22,4 @@ This vim bundle adds syntax highlighting, for NCS [MagiQ].
         $ git submodule init
 
 That's it. Pathogen should handle the rest. Opening a file with first line
-`*DYOFF*` extension will load everything.
+`*DYOFF*` will load everything.
